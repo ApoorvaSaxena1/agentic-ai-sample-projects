@@ -130,12 +130,13 @@ Enhance AI prompt sophistication
 Pull requests welcome! For major changes, please open an issue first.
 
 ## ⚙ Tech Stack
-Python 3.10 — main programming language
-pandas — data processing and aggregation
-matplotlib, seaborn, plotly, pyvis — data visualization (static and interactive)
-networkx — network graph data structures
-OpenAI API — AI-powered recommendations for restaurant insights
-python-dotenv — secure environment variable management
+1) Python 3.10 — main programming language
+2) pandas — data processing and aggregation
+3) matplotlib, seaborn, plotly, pyvis — data visualization (static and interactive)
+4) networkx — network graph data structures
+5) OpenAI API — AI-powered recommendations for restaurant insights
+6) python-dotenv — secure environment variable management
+
 
 (Optional for extension: HuggingFace Transformers, Streamlit)
 
