@@ -78,7 +78,8 @@ Here’s an example of the AI recommendations produced:
 ## 🔧 How to run
 
 1️⃣ Clone the repo:
-git clone https://github.com/YOUR_USERNAME/user-journey-analyzer-agent.git
+git clone
+[https://github.com/YOUR_USERNAME/user-journey-analyzer-agent.git](https://github.com/ApoorvaSaxena1/agentic-ai-sample-projects)
 cd user-journey-analyzer-agent
 
 2️⃣ Create and activate virtual environment:
