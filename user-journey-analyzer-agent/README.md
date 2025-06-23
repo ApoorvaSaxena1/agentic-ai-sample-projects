@@ -24,7 +24,7 @@
 ---
 
 ## 📂 Project Structure
-user-journey-analyzer-agent/
+<pre>user-journey-analyzer-agent/
 ├── data/
 │ └── big_sample_clickstream.csv
 ├── images/
@@ -43,7 +43,7 @@ user-journey-analyzer-agent/
 ├── .env
 ├── .gitignore
 ├── requirements.txt
-└── README.md
+└── README.md </pre>
 
 ## 🤖 Sample AI Recommendation Snippet
 The tool analyzes user journeys and generates actionable advice for restaurants using the OpenAI API.
