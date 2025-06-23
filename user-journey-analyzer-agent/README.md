@@ -94,7 +94,7 @@ Run analysis + visualizations + AI recommendations
 ✅ Output will be in images/ + outputs/
 
 
-💡 Sample data format
+## 💡 Sample data format
 The sample_clickstream.csv file in data/ looks like:
 
 user_id	timestamp	page	action	duration_on_page
@@ -102,7 +102,7 @@ u1	2024-06-21T09:00:00	homepage	view	5
 u1	2024-06-21T09:00:05	signup	click	15
 u1	2024-06-21T09:00:20	dashboard	view	30
 
-🧠 AI agent
+## 🧠 AI agent
 
 👉 Generates restaurant-level recommendations based on:
 
@@ -115,20 +115,20 @@ Cart actions
 
 OPENAI_API_KEY=sk-xxxxx
 
-📝 Notes
+## 📝 Notes
 .env is excluded from version control (.gitignore)
 Visual outputs saved as both HTML + images
 Project designed for easy extension (e.g., Streamlit UI, cloud deployment)
 
-📌 To-do / future work
+## 📌 To-do / future work
 Add Streamlit app for interactive demo
 Allow dynamic dataset uploads
 Enhance AI prompt sophistication
 
-🤝 Contributing
+## 🤝 Contributing
 Pull requests welcome! For major changes, please open an issue first.
 
-⚙ Tech Stack
+## ⚙ Tech Stack
 Python 3.10 — main programming language
 pandas — data processing and aggregation
 matplotlib, seaborn, plotly, pyvis — data visualization (static and interactive)
