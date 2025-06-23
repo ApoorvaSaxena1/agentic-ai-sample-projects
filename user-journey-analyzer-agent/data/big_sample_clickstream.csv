@@ -1,0 +1,452 @@
+user_id,timestamp,page,action,duration_on_page
+u1,2025-06-23 15:40:40.304763,homepage,view,5
+u1,2025-06-23 15:40:45.304763,restaurant_page: Salad Studio,view,9
+u1,2025-06-23 15:40:50.304763,menu_item_page: Protein Bowl,view,6
+u1,2025-06-23 15:40:55.304763,cart,add_item,3
+u1,2025-06-23 15:40:58.304763,checkout,click,5
+u2,2025-06-23 15:40:40.304816,homepage,view,5
+u2,2025-06-23 15:40:45.304816,restaurant_page: Burger Barn,view,8
+u2,2025-06-23 15:40:50.304816,menu_item_page: Fries,view,8
+u2,2025-06-23 15:40:55.304816,cart,add_item,3
+u2,2025-06-23 15:40:58.304816,menu_item_page: Bacon Burger,view,6
+u2,2025-06-23 15:41:03.304816,cart,add_item,3
+u2,2025-06-23 15:41:06.304816,cart,clear_cart,2
+u2,2025-06-23 15:41:08.304816,checkout,click,9
+u3,2025-06-23 15:40:40.304844,homepage,view,5
+u3,2025-06-23 15:40:45.304844,restaurant_page: Vegan Vibes,view,8
+u3,2025-06-23 15:40:50.304844,menu_item_page: Smoothie,view,5
+u3,2025-06-23 15:40:55.304844,cart,add_item,3
+u3,2025-06-23 15:40:58.304844,menu_item_page: Vegan Burger,view,7
+u3,2025-06-23 15:41:03.304844,cart,add_item,3
+u3,2025-06-23 15:41:06.304844,restaurant_page: Salad Studio,view,8
+u3,2025-06-23 15:41:11.304844,menu_item_page: Caesar Salad,view,10
+u3,2025-06-23 15:41:16.304844,checkout,click,10
+u4,2025-06-23 15:40:40.304869,homepage,view,5
+u4,2025-06-23 15:40:45.304869,restaurant_page: Burger Barn,view,8
+u4,2025-06-23 15:40:50.304869,menu_item_page: Fries,view,10
+u4,2025-06-23 15:40:55.304869,cart,add_item,3
+u4,2025-06-23 15:40:58.304869,restaurant_page: Taco Town,view,9
+u4,2025-06-23 15:41:03.304869,menu_item_page: Nachos,view,5
+u5,2025-06-23 15:40:40.304886,homepage,view,5
+u5,2025-06-23 15:40:45.304886,restaurant_page: Salad Studio,view,6
+u5,2025-06-23 15:40:50.304886,menu_item_page: Protein Bowl,view,7
+u5,2025-06-23 15:40:55.304886,cart,add_item,3
+u5,2025-06-23 15:40:58.304886,menu_item_page: Caesar Salad,view,6
+u5,2025-06-23 15:41:03.304886,menu_item_page: Protein Bowl,view,5
+u5,2025-06-23 15:41:08.304886,cart,clear_cart,2
+u6,2025-06-23 15:40:40.304904,homepage,view,5
+u6,2025-06-23 15:40:45.304904,restaurant_page: Noodle Nook,view,5
+u6,2025-06-23 15:40:50.304904,menu_item_page: Spring Roll,view,9
+u6,2025-06-23 15:40:55.304904,cart,add_item,3
+u6,2025-06-23 15:40:58.304904,menu_item_page: Spring Roll,view,5
+u6,2025-06-23 15:41:03.304904,restaurant_page: Sushi World,view,9
+u6,2025-06-23 15:41:08.304904,menu_item_page: Salmon Roll,view,5
+u6,2025-06-23 15:41:13.304904,cart,add_item,3
+u6,2025-06-23 15:41:16.304904,menu_item_page: Tuna Sashimi,view,8
+u6,2025-06-23 15:41:21.304904,cart,add_item,3
+u6,2025-06-23 15:41:24.304904,cart,clear_cart,2
+u6,2025-06-23 15:41:26.304904,checkout,click,10
+u7,2025-06-23 15:40:40.304934,homepage,view,5
+u7,2025-06-23 15:40:45.304934,restaurant_page: Taco Town,view,8
+u7,2025-06-23 15:40:50.304934,menu_item_page: Beef Taco,view,8
+u7,2025-06-23 15:40:55.304934,cart,add_item,3
+u7,2025-06-23 15:40:58.304934,menu_item_page: Beef Taco,view,8
+u7,2025-06-23 15:41:03.304934,cart,add_item,3
+u7,2025-06-23 15:41:06.304934,cart,clear_cart,2
+u7,2025-06-23 15:41:08.304934,cart,clear_cart,2
+u8,2025-06-23 15:40:40.304953,homepage,view,5
+u8,2025-06-23 15:40:45.304953,restaurant_page: BBQ Bliss,view,6
+u8,2025-06-23 15:40:50.304953,menu_item_page: Pulled Pork Sandwich,view,10
+u8,2025-06-23 15:40:55.304953,cart,add_item,3
+u8,2025-06-23 15:40:58.304953,cart,clear_cart,2
+u8,2025-06-23 15:41:00.304953,restaurant_page: Sushi World,view,7
+u8,2025-06-23 15:41:05.304953,menu_item_page: Miso Soup,view,6
+u8,2025-06-23 15:41:10.304953,menu_item_page: Miso Soup,view,10
+u8,2025-06-23 15:41:15.304953,cart,add_item,3
+u9,2025-06-23 15:40:40.304988,homepage,view,5
+u9,2025-06-23 15:40:45.304988,restaurant_page: Burger Barn,view,10
+u9,2025-06-23 15:40:50.304988,menu_item_page: Fries,view,5
+u9,2025-06-23 15:40:55.304988,cart,add_item,3
+u9,2025-06-23 15:40:58.304988,menu_item_page: Cheeseburger,view,8
+u9,2025-06-23 15:41:03.304988,cart,add_item,3
+u9,2025-06-23 15:41:06.304988,menu_item_page: Fries,view,8
+u9,2025-06-23 15:41:11.304988,cart,add_item,3
+u10,2025-06-23 15:40:40.305008,homepage,view,5
+u10,2025-06-23 15:40:45.305008,restaurant_page: Sweet Treats,view,8
+u10,2025-06-23 15:40:50.305008,menu_item_page: Ice Cream,view,10
+u10,2025-06-23 15:40:55.305008,cart,add_item,3
+u10,2025-06-23 15:40:58.305008,menu_item_page: Ice Cream,view,5
+u10,2025-06-23 15:41:03.305008,cart,add_item,3
+u10,2025-06-23 15:41:06.305008,menu_item_page: Donut,view,9
+u10,2025-06-23 15:41:11.305008,cart,add_item,3
+u10,2025-06-23 15:41:14.305008,cart,clear_cart,2
+u11,2025-06-23 15:40:40.305031,homepage,view,5
+u11,2025-06-23 15:40:45.305031,restaurant_page: Noodle Nook,view,5
+u11,2025-06-23 15:40:50.305031,menu_item_page: Fried Rice,view,7
+u11,2025-06-23 15:40:55.305031,cart,add_item,3
+u11,2025-06-23 15:40:58.305031,menu_item_page: Fried Rice,view,6
+u11,2025-06-23 15:41:03.305031,cart,add_item,3
+u11,2025-06-23 15:41:06.305031,menu_item_page: Chicken Chow Mein,view,8
+u11,2025-06-23 15:41:11.305031,cart,add_item,3
+u11,2025-06-23 15:41:14.305031,cart,clear_cart,2
+u11,2025-06-23 15:41:16.305031,restaurant_page: BBQ Bliss,view,6
+u11,2025-06-23 15:41:21.305031,menu_item_page: Cornbread,view,9
+u11,2025-06-23 15:41:26.305031,cart,add_item,3
+u11,2025-06-23 15:41:29.305031,cart,clear_cart,2
+u12,2025-06-23 15:40:40.305061,homepage,view,5
+u12,2025-06-23 15:40:45.305061,restaurant_page: Taco Town,view,9
+u12,2025-06-23 15:40:50.305061,menu_item_page: Veggie Taco,view,8
+u12,2025-06-23 15:40:55.305061,menu_item_page: Beef Taco,view,6
+u12,2025-06-23 15:41:00.305061,cart,add_item,3
+u12,2025-06-23 15:41:03.305061,menu_item_page: Beef Taco,view,8
+u12,2025-06-23 15:41:08.305061,cart,add_item,3
+u12,2025-06-23 15:41:11.305061,restaurant_page: Salad Studio,view,9
+u12,2025-06-23 15:41:16.305061,menu_item_page: Caesar Salad,view,6
+u12,2025-06-23 15:41:21.305061,cart,add_item,3
+u12,2025-06-23 15:41:24.305061,menu_item_page: Greek Salad,view,7
+u12,2025-06-23 15:41:29.305061,menu_item_page: Caesar Salad,view,5
+u12,2025-06-23 15:41:34.305061,cart,add_item,3
+u12,2025-06-23 15:41:37.305061,checkout,click,6
+u13,2025-06-23 15:40:40.305095,homepage,view,5
+u13,2025-06-23 15:40:45.305095,restaurant_page: BBQ Bliss,view,10
+u13,2025-06-23 15:40:50.305095,menu_item_page: BBQ Ribs,view,6
+u13,2025-06-23 15:40:55.305095,menu_item_page: BBQ Ribs,view,9
+u13,2025-06-23 15:41:00.305095,cart,add_item,3
+u13,2025-06-23 15:41:03.305095,menu_item_page: Pulled Pork Sandwich,view,7
+u13,2025-06-23 15:41:08.305095,restaurant_page: Pizza Palace,view,9
+u13,2025-06-23 15:41:13.305095,menu_item_page: Pepperoni Pizza,view,7
+u13,2025-06-23 15:41:18.305095,cart,add_item,3
+u14,2025-06-23 15:40:40.305118,homepage,view,5
+u14,2025-06-23 15:40:45.305118,restaurant_page: Taco Town,view,8
+u14,2025-06-23 15:40:50.305118,menu_item_page: Beef Taco,view,5
+u14,2025-06-23 15:40:55.305118,cart,add_item,3
+u14,2025-06-23 15:40:58.305118,menu_item_page: Veggie Taco,view,7
+u14,2025-06-23 15:41:03.305118,cart,clear_cart,2
+u14,2025-06-23 15:41:05.305118,checkout,click,6
+u15,2025-06-23 15:40:40.305135,homepage,view,5
+u15,2025-06-23 15:40:45.305135,restaurant_page: Burger Barn,view,10
+u15,2025-06-23 15:40:50.305135,menu_item_page: Fries,view,7
+u15,2025-06-23 15:40:55.305135,cart,add_item,3
+u15,2025-06-23 15:40:58.305135,restaurant_page: Sushi World,view,9
+u15,2025-06-23 15:41:03.305135,menu_item_page: Tuna Sashimi,view,9
+u15,2025-06-23 15:41:08.305135,cart,add_item,3
+u15,2025-06-23 15:41:11.305135,checkout,click,10
+u16,2025-06-23 15:40:40.305155,homepage,view,5
+u16,2025-06-23 15:40:45.305155,restaurant_page: Vegan Vibes,view,8
+u16,2025-06-23 15:40:50.305155,menu_item_page: Vegan Burger,view,8
+u16,2025-06-23 15:40:55.305155,menu_item_page: Quinoa Bowl,view,6
+u16,2025-06-23 15:41:00.305155,cart,add_item,3
+u16,2025-06-23 15:41:03.305155,restaurant_page: Taco Town,view,9
+u16,2025-06-23 15:41:08.305155,menu_item_page: Nachos,view,6
+u16,2025-06-23 15:41:13.305155,menu_item_page: Beef Taco,view,9
+u16,2025-06-23 15:41:18.305155,cart,add_item,3
+u16,2025-06-23 15:41:21.305155,cart,clear_cart,2
+u16,2025-06-23 15:41:23.305155,cart,clear_cart,2
+u17,2025-06-23 15:40:40.305245,homepage,view,5
+u17,2025-06-23 15:40:45.305245,restaurant_page: Sweet Treats,view,7
+u17,2025-06-23 15:40:50.305245,menu_item_page: Donut,view,7
+u17,2025-06-23 15:40:55.305245,menu_item_page: Chocolate Cake,view,9
+u18,2025-06-23 15:40:40.305259,homepage,view,5
+u18,2025-06-23 15:40:45.305259,restaurant_page: BBQ Bliss,view,9
+u18,2025-06-23 15:40:50.305259,menu_item_page: Cornbread,view,7
+u18,2025-06-23 15:40:55.305259,menu_item_page: BBQ Ribs,view,8
+u18,2025-06-23 15:41:00.305259,restaurant_page: Sushi World,view,6
+u18,2025-06-23 15:41:05.305259,menu_item_page: Salmon Roll,view,6
+u19,2025-06-23 15:40:40.305275,homepage,view,5
+u19,2025-06-23 15:40:45.305275,restaurant_page: Taco Town,view,5
+u19,2025-06-23 15:40:50.305275,menu_item_page: Veggie Taco,view,6
+u19,2025-06-23 15:40:55.305275,cart,add_item,3
+u19,2025-06-23 15:40:58.305275,restaurant_page: Noodle Nook,view,8
+u19,2025-06-23 15:41:03.305275,menu_item_page: Spring Roll,view,10
+u19,2025-06-23 15:41:08.305275,cart,add_item,3
+u19,2025-06-23 15:41:11.305275,cart,clear_cart,2
+u20,2025-06-23 15:40:40.305295,homepage,view,5
+u20,2025-06-23 15:40:45.305295,restaurant_page: Burger Barn,view,6
+u20,2025-06-23 15:40:50.305295,menu_item_page: Fries,view,8
+u20,2025-06-23 15:40:55.305295,cart,add_item,3
+u20,2025-06-23 15:40:58.305295,cart,clear_cart,2
+u20,2025-06-23 15:41:00.305295,restaurant_page: Taco Town,view,9
+u20,2025-06-23 15:41:05.305295,menu_item_page: Veggie Taco,view,7
+u20,2025-06-23 15:41:10.305295,menu_item_page: Veggie Taco,view,9
+u20,2025-06-23 15:41:15.305295,cart,add_item,3
+u20,2025-06-23 15:41:18.305295,checkout,click,8
+u21,2025-06-23 15:40:40.305319,homepage,view,5
+u21,2025-06-23 15:40:45.305319,restaurant_page: Burger Barn,view,9
+u21,2025-06-23 15:40:50.305319,menu_item_page: Cheeseburger,view,8
+u21,2025-06-23 15:40:55.305319,menu_item_page: Fries,view,5
+u21,2025-06-23 15:41:00.305319,cart,add_item,3
+u21,2025-06-23 15:41:03.305319,menu_item_page: Bacon Burger,view,6
+u21,2025-06-23 15:41:08.305319,cart,add_item,3
+u21,2025-06-23 15:41:11.305319,restaurant_page: Salad Studio,view,7
+u21,2025-06-23 15:41:16.305319,menu_item_page: Greek Salad,view,9
+u21,2025-06-23 15:41:21.305319,checkout,click,5
+u22,2025-06-23 15:40:40.305344,homepage,view,5
+u22,2025-06-23 15:40:45.305344,restaurant_page: Noodle Nook,view,7
+u22,2025-06-23 15:40:50.305344,menu_item_page: Fried Rice,view,6
+u22,2025-06-23 15:40:55.305344,cart,add_item,3
+u22,2025-06-23 15:40:58.305344,menu_item_page: Fried Rice,view,10
+u22,2025-06-23 15:41:03.305344,menu_item_page: Fried Rice,view,7
+u22,2025-06-23 15:41:08.305344,cart,add_item,3
+u23,2025-06-23 15:40:40.305361,homepage,view,5
+u23,2025-06-23 15:40:45.305361,restaurant_page: Salad Studio,view,9
+u23,2025-06-23 15:40:50.305361,menu_item_page: Caesar Salad,view,5
+u23,2025-06-23 15:40:55.305361,cart,add_item,3
+u23,2025-06-23 15:40:58.305361,checkout,click,10
+u24,2025-06-23 15:40:40.305375,homepage,view,5
+u24,2025-06-23 15:40:45.305375,restaurant_page: Pizza Palace,view,7
+u24,2025-06-23 15:40:50.305375,menu_item_page: Pepperoni Pizza,view,7
+u24,2025-06-23 15:40:55.305375,menu_item_page: Margherita Pizza,view,10
+u24,2025-06-23 15:41:00.305375,menu_item_page: Margherita Pizza,view,6
+u25,2025-06-23 15:40:40.305388,homepage,view,5
+u25,2025-06-23 15:40:45.305388,restaurant_page: BBQ Bliss,view,8
+u25,2025-06-23 15:40:50.305388,menu_item_page: BBQ Ribs,view,10
+u25,2025-06-23 15:40:55.305388,restaurant_page: Noodle Nook,view,10
+u25,2025-06-23 15:41:00.305388,menu_item_page: Chicken Chow Mein,view,5
+u25,2025-06-23 15:41:05.305388,cart,add_item,3
+u25,2025-06-23 15:41:08.305388,menu_item_page: Fried Rice,view,10
+u25,2025-06-23 15:41:13.305388,cart,add_item,3
+u25,2025-06-23 15:41:16.305388,cart,clear_cart,2
+u25,2025-06-23 15:41:18.305388,checkout,click,7
+u26,2025-06-23 15:40:40.305412,homepage,view,5
+u26,2025-06-23 15:40:45.305412,restaurant_page: Vegan Vibes,view,6
+u26,2025-06-23 15:40:50.305412,menu_item_page: Smoothie,view,9
+u26,2025-06-23 15:40:55.305412,cart,add_item,3
+u26,2025-06-23 15:40:58.305412,menu_item_page: Smoothie,view,9
+u26,2025-06-23 15:41:03.305412,cart,add_item,3
+u26,2025-06-23 15:41:06.305412,cart,clear_cart,2
+u26,2025-06-23 15:41:08.305412,restaurant_page: Sushi World,view,5
+u26,2025-06-23 15:41:13.305412,menu_item_page: Salmon Roll,view,5
+u26,2025-06-23 15:41:18.305412,menu_item_page: Salmon Roll,view,10
+u26,2025-06-23 15:41:23.305412,cart,add_item,3
+u27,2025-06-23 15:40:40.305446,homepage,view,5
+u27,2025-06-23 15:40:45.305446,restaurant_page: BBQ Bliss,view,8
+u27,2025-06-23 15:40:50.305446,menu_item_page: Pulled Pork Sandwich,view,6
+u27,2025-06-23 15:40:55.305446,cart,add_item,3
+u27,2025-06-23 15:40:58.305446,menu_item_page: Cornbread,view,7
+u27,2025-06-23 15:41:03.305446,cart,add_item,3
+u27,2025-06-23 15:41:06.305446,menu_item_page: Pulled Pork Sandwich,view,9
+u27,2025-06-23 15:41:11.305446,cart,add_item,3
+u27,2025-06-23 15:41:14.305446,cart,clear_cart,2
+u27,2025-06-23 15:41:16.305446,checkout,click,8
+u28,2025-06-23 15:40:40.305469,homepage,view,5
+u28,2025-06-23 15:40:45.305469,restaurant_page: Taco Town,view,8
+u28,2025-06-23 15:40:50.305469,menu_item_page: Nachos,view,7
+u28,2025-06-23 15:40:55.305469,cart,add_item,3
+u28,2025-06-23 15:40:58.305469,restaurant_page: Taco Town,view,6
+u28,2025-06-23 15:41:03.305469,menu_item_page: Beef Taco,view,6
+u28,2025-06-23 15:41:08.305469,cart,add_item,3
+u28,2025-06-23 15:41:11.305469,menu_item_page: Beef Taco,view,7
+u28,2025-06-23 15:41:16.305469,cart,add_item,3
+u29,2025-06-23 15:40:40.305491,homepage,view,5
+u29,2025-06-23 15:40:45.305491,restaurant_page: Salad Studio,view,7
+u29,2025-06-23 15:40:50.305491,menu_item_page: Caesar Salad,view,10
+u29,2025-06-23 15:40:55.305491,menu_item_page: Caesar Salad,view,6
+u29,2025-06-23 15:41:00.305491,menu_item_page: Protein Bowl,view,8
+u29,2025-06-23 15:41:05.305491,cart,add_item,3
+u29,2025-06-23 15:41:08.305491,cart,clear_cart,2
+u29,2025-06-23 15:41:10.305491,checkout,click,10
+u30,2025-06-23 15:40:40.305510,homepage,view,5
+u30,2025-06-23 15:40:45.305510,restaurant_page: Sweet Treats,view,9
+u30,2025-06-23 15:40:50.305510,menu_item_page: Ice Cream,view,8
+u30,2025-06-23 15:40:55.305510,cart,add_item,3
+u30,2025-06-23 15:40:58.305510,cart,clear_cart,2
+u30,2025-06-23 15:41:00.305510,cart,clear_cart,2
+u31,2025-06-23 15:40:40.305749,homepage,view,5
+u31,2025-06-23 15:40:45.305749,restaurant_page: Pizza Palace,view,5
+u31,2025-06-23 15:40:50.305749,menu_item_page: Garlic Bread,view,8
+u31,2025-06-23 15:40:55.305749,menu_item_page: Margherita Pizza,view,9
+u31,2025-06-23 15:41:00.305749,cart,add_item,3
+u31,2025-06-23 15:41:03.305749,menu_item_page: Garlic Bread,view,5
+u31,2025-06-23 15:41:08.305749,cart,add_item,3
+u31,2025-06-23 15:41:11.305749,restaurant_page: Salad Studio,view,6
+u31,2025-06-23 15:41:16.305749,menu_item_page: Caesar Salad,view,10
+u31,2025-06-23 15:41:21.305749,cart,add_item,3
+u31,2025-06-23 15:41:24.305749,menu_item_page: Protein Bowl,view,6
+u31,2025-06-23 15:41:29.305749,cart,add_item,3
+u31,2025-06-23 15:41:32.305749,cart,clear_cart,2
+u31,2025-06-23 15:41:34.305749,checkout,click,10
+u32,2025-06-23 15:40:40.305788,homepage,view,5
+u32,2025-06-23 15:40:45.305788,restaurant_page: Burger Barn,view,10
+u32,2025-06-23 15:40:50.305788,menu_item_page: Cheeseburger,view,6
+u32,2025-06-23 15:40:55.305788,cart,add_item,3
+u32,2025-06-23 15:40:58.305788,cart,clear_cart,2
+u32,2025-06-23 15:41:00.305788,restaurant_page: Taco Town,view,7
+u32,2025-06-23 15:41:05.305788,menu_item_page: Veggie Taco,view,5
+u32,2025-06-23 15:41:10.305788,menu_item_page: Veggie Taco,view,8
+u32,2025-06-23 15:41:15.305788,cart,add_item,3
+u32,2025-06-23 15:41:18.305788,menu_item_page: Beef Taco,view,6
+u32,2025-06-23 15:41:23.305788,cart,add_item,3
+u32,2025-06-23 15:41:26.305788,checkout,click,7
+u33,2025-06-23 15:40:40.305822,homepage,view,5
+u33,2025-06-23 15:40:45.305822,restaurant_page: BBQ Bliss,view,5
+u33,2025-06-23 15:40:50.305822,menu_item_page: Pulled Pork Sandwich,view,6
+u33,2025-06-23 15:40:55.305822,cart,add_item,3
+u33,2025-06-23 15:40:58.305822,restaurant_page: BBQ Bliss,view,6
+u33,2025-06-23 15:41:03.305822,menu_item_page: Pulled Pork Sandwich,view,10
+u33,2025-06-23 15:41:08.305822,menu_item_page: BBQ Ribs,view,10
+u33,2025-06-23 15:41:13.305822,cart,add_item,3
+u33,2025-06-23 15:41:16.305822,menu_item_page: BBQ Ribs,view,10
+u33,2025-06-23 15:41:21.305822,cart,clear_cart,2
+u33,2025-06-23 15:41:23.305822,checkout,click,9
+u34,2025-06-23 15:40:40.305898,homepage,view,5
+u34,2025-06-23 15:40:45.305898,restaurant_page: Salad Studio,view,6
+u34,2025-06-23 15:40:50.305898,menu_item_page: Caesar Salad,view,9
+u34,2025-06-23 15:40:55.305898,cart,add_item,3
+u34,2025-06-23 15:40:58.305898,menu_item_page: Greek Salad,view,9
+u34,2025-06-23 15:41:03.305898,cart,add_item,3
+u34,2025-06-23 15:41:06.305898,restaurant_page: Salad Studio,view,8
+u34,2025-06-23 15:41:11.305898,menu_item_page: Caesar Salad,view,7
+u34,2025-06-23 15:41:16.305898,cart,add_item,3
+u34,2025-06-23 15:41:19.305898,menu_item_page: Caesar Salad,view,9
+u34,2025-06-23 15:41:24.305898,cart,add_item,3
+u34,2025-06-23 15:41:27.305898,checkout,click,7
+u35,2025-06-23 15:40:40.305930,homepage,view,5
+u35,2025-06-23 15:40:45.305930,restaurant_page: Pizza Palace,view,7
+u35,2025-06-23 15:40:50.305930,menu_item_page: Pepperoni Pizza,view,9
+u35,2025-06-23 15:40:55.305930,cart,add_item,3
+u35,2025-06-23 15:40:58.305930,menu_item_page: Margherita Pizza,view,10
+u35,2025-06-23 15:41:03.305930,cart,add_item,3
+u35,2025-06-23 15:41:06.305930,menu_item_page: Garlic Bread,view,5
+u35,2025-06-23 15:41:11.305930,cart,add_item,3
+u35,2025-06-23 15:41:14.305930,restaurant_page: BBQ Bliss,view,10
+u35,2025-06-23 15:41:19.305930,menu_item_page: BBQ Ribs,view,8
+u35,2025-06-23 15:41:24.305930,cart,add_item,3
+u35,2025-06-23 15:41:27.305930,checkout,click,8
+u36,2025-06-23 15:40:40.305959,homepage,view,5
+u36,2025-06-23 15:40:45.305959,restaurant_page: Pizza Palace,view,6
+u36,2025-06-23 15:40:50.305959,menu_item_page: Garlic Bread,view,6
+u36,2025-06-23 15:40:55.305959,cart,add_item,3
+u36,2025-06-23 15:40:58.305959,menu_item_page: Garlic Bread,view,8
+u36,2025-06-23 15:41:03.305959,cart,add_item,3
+u36,2025-06-23 15:41:06.305959,menu_item_page: Pepperoni Pizza,view,9
+u36,2025-06-23 15:41:11.305959,cart,add_item,3
+u36,2025-06-23 15:41:14.305959,restaurant_page: BBQ Bliss,view,7
+u36,2025-06-23 15:41:19.305959,menu_item_page: Cornbread,view,5
+u36,2025-06-23 15:41:24.305959,cart,add_item,3
+u36,2025-06-23 15:41:27.305959,cart,clear_cart,2
+u36,2025-06-23 15:41:29.305959,cart,clear_cart,2
+u37,2025-06-23 15:40:40.305990,homepage,view,5
+u37,2025-06-23 15:40:45.305990,restaurant_page: Taco Town,view,8
+u37,2025-06-23 15:40:50.305990,menu_item_page: Veggie Taco,view,9
+u37,2025-06-23 15:40:55.305990,cart,add_item,3
+u38,2025-06-23 15:40:40.306002,homepage,view,5
+u38,2025-06-23 15:40:45.306002,restaurant_page: Noodle Nook,view,7
+u38,2025-06-23 15:40:50.306002,menu_item_page: Chicken Chow Mein,view,8
+u38,2025-06-23 15:40:55.306002,cart,add_item,3
+u38,2025-06-23 15:40:58.306002,cart,clear_cart,2
+u38,2025-06-23 15:41:00.306002,checkout,click,7
+u39,2025-06-23 15:40:40.306017,homepage,view,5
+u39,2025-06-23 15:40:45.306017,restaurant_page: BBQ Bliss,view,7
+u39,2025-06-23 15:40:50.306017,menu_item_page: Pulled Pork Sandwich,view,6
+u39,2025-06-23 15:40:55.306017,cart,add_item,3
+u39,2025-06-23 15:40:58.306017,cart,clear_cart,2
+u40,2025-06-23 15:40:40.306030,homepage,view,5
+u40,2025-06-23 15:40:45.306030,restaurant_page: Burger Barn,view,5
+u40,2025-06-23 15:40:50.306030,menu_item_page: Bacon Burger,view,9
+u40,2025-06-23 15:40:55.306030,cart,add_item,3
+u40,2025-06-23 15:40:58.306030,menu_item_page: Bacon Burger,view,6
+u40,2025-06-23 15:41:03.306030,cart,add_item,3
+u40,2025-06-23 15:41:06.306030,menu_item_page: Fries,view,8
+u40,2025-06-23 15:41:11.306030,restaurant_page: Sweet Treats,view,9
+u40,2025-06-23 15:41:16.306030,menu_item_page: Donut,view,5
+u40,2025-06-23 15:41:21.306030,cart,add_item,3
+u40,2025-06-23 15:41:24.306030,menu_item_page: Ice Cream,view,8
+u40,2025-06-23 15:41:29.306030,cart,add_item,3
+u40,2025-06-23 15:41:32.306030,checkout,click,7
+u41,2025-06-23 15:40:40.306061,homepage,view,5
+u41,2025-06-23 15:40:45.306061,restaurant_page: BBQ Bliss,view,7
+u41,2025-06-23 15:40:50.306061,menu_item_page: BBQ Ribs,view,10
+u41,2025-06-23 15:40:55.306061,cart,add_item,3
+u41,2025-06-23 15:40:58.306061,menu_item_page: Pulled Pork Sandwich,view,5
+u41,2025-06-23 15:41:03.306061,restaurant_page: Taco Town,view,7
+u41,2025-06-23 15:41:08.306061,menu_item_page: Beef Taco,view,8
+u41,2025-06-23 15:41:13.306061,cart,add_item,3
+u41,2025-06-23 15:41:16.306061,cart,clear_cart,2
+u42,2025-06-23 15:40:40.306083,homepage,view,5
+u42,2025-06-23 15:40:45.306083,restaurant_page: Taco Town,view,6
+u42,2025-06-23 15:40:50.306083,menu_item_page: Nachos,view,8
+u42,2025-06-23 15:40:55.306083,cart,add_item,3
+u42,2025-06-23 15:40:58.306083,menu_item_page: Veggie Taco,view,8
+u42,2025-06-23 15:41:03.306083,menu_item_page: Beef Taco,view,5
+u42,2025-06-23 15:41:08.306083,restaurant_page: Pizza Palace,view,5
+u42,2025-06-23 15:41:13.306083,menu_item_page: Margherita Pizza,view,7
+u42,2025-06-23 15:41:18.306083,cart,add_item,3
+u42,2025-06-23 15:41:21.306083,menu_item_page: Pepperoni Pizza,view,10
+u42,2025-06-23 15:41:26.306083,cart,add_item,3
+u42,2025-06-23 15:41:29.306083,menu_item_page: Margherita Pizza,view,7
+u42,2025-06-23 15:41:34.306083,cart,add_item,3
+u43,2025-06-23 15:40:40.306115,homepage,view,5
+u43,2025-06-23 15:40:45.306115,restaurant_page: BBQ Bliss,view,8
+u43,2025-06-23 15:40:50.306115,menu_item_page: BBQ Ribs,view,10
+u43,2025-06-23 15:40:55.306115,cart,add_item,3
+u43,2025-06-23 15:40:58.306115,menu_item_page: Pulled Pork Sandwich,view,6
+u44,2025-06-23 15:40:40.306130,homepage,view,5
+u44,2025-06-23 15:40:45.306130,restaurant_page: Burger Barn,view,10
+u44,2025-06-23 15:40:50.306130,menu_item_page: Bacon Burger,view,10
+u44,2025-06-23 15:40:55.306130,cart,add_item,3
+u44,2025-06-23 15:40:58.306130,menu_item_page: Fries,view,7
+u44,2025-06-23 15:41:03.306130,cart,add_item,3
+u45,2025-06-23 15:40:40.306145,homepage,view,5
+u45,2025-06-23 15:40:45.306145,restaurant_page: BBQ Bliss,view,9
+u45,2025-06-23 15:40:50.306145,menu_item_page: Cornbread,view,5
+u45,2025-06-23 15:40:55.306145,menu_item_page: Pulled Pork Sandwich,view,10
+u45,2025-06-23 15:41:00.306145,cart,add_item,3
+u45,2025-06-23 15:41:03.306145,menu_item_page: BBQ Ribs,view,8
+u45,2025-06-23 15:41:08.306145,restaurant_page: Sushi World,view,6
+u45,2025-06-23 15:41:13.306145,menu_item_page: Miso Soup,view,8
+u45,2025-06-23 15:41:18.306145,menu_item_page: Salmon Roll,view,10
+u45,2025-06-23 15:41:23.306145,cart,add_item,3
+u45,2025-06-23 15:41:26.306145,menu_item_page: Salmon Roll,view,7
+u45,2025-06-23 15:41:31.306145,cart,add_item,3
+u45,2025-06-23 15:41:34.306145,cart,clear_cart,2
+u46,2025-06-23 15:40:40.306177,homepage,view,5
+u46,2025-06-23 15:40:45.306177,restaurant_page: Vegan Vibes,view,7
+u46,2025-06-23 15:40:50.306177,menu_item_page: Vegan Burger,view,10
+u46,2025-06-23 15:40:55.306177,cart,add_item,3
+u46,2025-06-23 15:40:58.306177,menu_item_page: Smoothie,view,5
+u46,2025-06-23 15:41:03.306177,restaurant_page: Vegan Vibes,view,10
+u46,2025-06-23 15:41:08.306177,menu_item_page: Smoothie,view,10
+u46,2025-06-23 15:41:13.306177,cart,add_item,3
+u46,2025-06-23 15:41:16.306177,menu_item_page: Smoothie,view,9
+u46,2025-06-23 15:41:21.306177,cart,add_item,3
+u46,2025-06-23 15:41:24.306177,cart,clear_cart,2
+u47,2025-06-23 15:40:40.306202,homepage,view,5
+u47,2025-06-23 15:40:45.306202,restaurant_page: Sushi World,view,7
+u47,2025-06-23 15:40:50.306202,menu_item_page: Tuna Sashimi,view,8
+u47,2025-06-23 15:40:55.306202,cart,add_item,3
+u47,2025-06-23 15:40:58.306202,menu_item_page: Tuna Sashimi,view,10
+u47,2025-06-23 15:41:03.306202,menu_item_page: Miso Soup,view,6
+u47,2025-06-23 15:41:08.306202,cart,clear_cart,2
+u47,2025-06-23 15:41:10.306202,restaurant_page: Vegan Vibes,view,7
+u47,2025-06-23 15:41:15.306202,menu_item_page: Quinoa Bowl,view,7
+u47,2025-06-23 15:41:20.306202,menu_item_page: Smoothie,view,6
+u47,2025-06-23 15:41:25.306202,cart,add_item,3
+u47,2025-06-23 15:41:28.306202,cart,clear_cart,2
+u48,2025-06-23 15:40:40.306240,homepage,view,5
+u48,2025-06-23 15:40:45.306240,restaurant_page: Burger Barn,view,9
+u48,2025-06-23 15:40:50.306240,menu_item_page: Cheeseburger,view,5
+u48,2025-06-23 15:40:55.306240,menu_item_page: Bacon Burger,view,10
+u48,2025-06-23 15:41:00.306240,cart,add_item,3
+u48,2025-06-23 15:41:03.306240,menu_item_page: Cheeseburger,view,7
+u48,2025-06-23 15:41:08.306240,checkout,click,8
+u49,2025-06-23 15:40:40.306259,homepage,view,5
+u49,2025-06-23 15:40:45.306259,restaurant_page: Salad Studio,view,7
+u49,2025-06-23 15:40:50.306259,menu_item_page: Greek Salad,view,8
+u49,2025-06-23 15:40:55.306259,cart,add_item,3
+u49,2025-06-23 15:40:58.306259,restaurant_page: Burger Barn,view,6
+u49,2025-06-23 15:41:03.306259,menu_item_page: Cheeseburger,view,10
+u49,2025-06-23 15:41:08.306259,cart,add_item,3
+u49,2025-06-23 15:41:11.306259,menu_item_page: Cheeseburger,view,7
+u49,2025-06-23 15:41:16.306259,cart,add_item,3
+u49,2025-06-23 15:41:19.306259,menu_item_page: Fries,view,10
+u49,2025-06-23 15:41:24.306259,cart,add_item,3
+u49,2025-06-23 15:41:27.306259,checkout,click,10
+u50,2025-06-23 15:40:40.306290,homepage,view,5
+u50,2025-06-23 15:40:45.306290,restaurant_page: Sweet Treats,view,7
+u50,2025-06-23 15:40:50.306290,menu_item_page: Donut,view,8
+u50,2025-06-23 15:40:55.306290,menu_item_page: Chocolate Cake,view,5
+u50,2025-06-23 15:41:00.306290,cart,add_item,3
+u50,2025-06-23 15:41:03.306290,menu_item_page: Donut,view,10
+u50,2025-06-23 15:41:08.306290,restaurant_page: Noodle Nook,view,10
+u50,2025-06-23 15:41:13.306290,menu_item_page: Chicken Chow Mein,view,9
+u50,2025-06-23 15:41:18.306290,checkout,click,9

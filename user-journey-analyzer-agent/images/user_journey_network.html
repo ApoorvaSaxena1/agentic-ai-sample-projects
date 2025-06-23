@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 600px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+        #config {
+            float: left;
+            width: 400px;
+            height: 600px;
+        }
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<div id = "config"></div>
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "lightblue", "id": "homepage", "label": "homepage", "shape": "dot"}, {"color": "orange", "id": "Salad Studio", "label": "Salad Studio", "shape": "dot"}, {"color": "lightgreen", "id": "Protein Bowl", "label": "Protein Bowl", "shape": "dot"}, {"color": "lightblue", "id": "cart", "label": "cart", "shape": "dot"}, {"color": "lightblue", "id": "checkout", "label": "checkout", "shape": "dot"}, {"color": "orange", "id": "Sweet Treats", "label": "Sweet Treats", "shape": "dot"}, {"color": "lightgreen", "id": "Ice Cream", "label": "Ice Cream", "shape": "dot"}, {"color": "lightgreen", "id": "Donut", "label": "Donut", "shape": "dot"}, {"color": "orange", "id": "Noodle Nook", "label": "Noodle Nook", "shape": "dot"}, {"color": "lightgreen", "id": "Fried Rice", "label": "Fried Rice", "shape": "dot"}, {"color": "lightgreen", "id": "Chicken Chow Mein", "label": "Chicken Chow Mein", "shape": "dot"}, {"color": "orange", "id": "BBQ Bliss", "label": "BBQ Bliss", "shape": "dot"}, {"color": "lightgreen", "id": "Cornbread", "label": "Cornbread", "shape": "dot"}, {"color": "orange", "id": "Taco Town", "label": "Taco Town", "shape": "dot"}, {"color": "lightgreen", "id": "Veggie Taco", "label": "Veggie Taco", "shape": "dot"}, {"color": "lightgreen", "id": "Beef Taco", "label": "Beef Taco", "shape": "dot"}, {"color": "lightgreen", "id": "Caesar Salad", "label": "Caesar Salad", "shape": "dot"}, {"color": "lightgreen", "id": "Greek Salad", "label": "Greek Salad", "shape": "dot"}, {"color": "lightgreen", "id": "BBQ Ribs", "label": "BBQ Ribs", "shape": "dot"}, {"color": "lightgreen", "id": "Pulled Pork Sandwich", "label": "Pulled Pork Sandwich", "shape": "dot"}, {"color": "orange", "id": "Pizza Palace", "label": "Pizza Palace", "shape": "dot"}, {"color": "lightgreen", "id": "Pepperoni Pizza", "label": "Pepperoni Pizza", "shape": "dot"}, {"color": "orange", "id": "Burger Barn", "label": "Burger Barn", "shape": "dot"}, {"color": "lightgreen", "id": "Fries", "label": "Fries", "shape": "dot"}, {"color": "orange", "id": "Sushi World", "label": "Sushi World", "shape": "dot"}, {"color": "lightgreen", "id": "Tuna Sashimi", "label": "Tuna Sashimi", "shape": "dot"}, {"color": "orange", "id": "Vegan Vibes", "label": "Vegan Vibes", "shape": "dot"}, {"color": "lightgreen", "id": "Vegan Burger", "label": "Vegan Burger", "shape": "dot"}, {"color": "lightgreen", "id": "Quinoa Bowl", "label": "Quinoa Bowl", "shape": "dot"}, {"color": "lightgreen", "id": "Nachos", "label": "Nachos", "shape": "dot"}, {"color": "lightgreen", "id": "Chocolate Cake", "label": "Chocolate Cake", "shape": "dot"}, {"color": "lightgreen", "id": "Salmon Roll", "label": "Salmon Roll", "shape": "dot"}, {"color": "lightgreen", "id": "Spring Roll", "label": "Spring Roll", "shape": "dot"}, {"color": "lightgreen", "id": "Bacon Burger", "label": "Bacon Burger", "shape": "dot"}, {"color": "lightgreen", "id": "Cheeseburger", "label": "Cheeseburger", "shape": "dot"}, {"color": "lightgreen", "id": "Margherita Pizza", "label": "Margherita Pizza", "shape": "dot"}, {"color": "lightgreen", "id": "Smoothie", "label": "Smoothie", "shape": "dot"}, {"color": "lightgreen", "id": "Garlic Bread", "label": "Garlic Bread", "shape": "dot"}, {"color": "lightgreen", "id": "Miso Soup", "label": "Miso Soup", "shape": "dot"}, {"color": "orange", "hidden": true, "id": "Legend: Restaurant", "label": "Legend: Restaurant", "shape": "box"}, {"color": "lightgreen", "hidden": true, "id": "Legend: Menu Item", "label": "Legend: Menu Item", "shape": "box"}, {"color": "lightblue", "hidden": true, "id": "Legend: Other", "label": "Legend: Other", "shape": "box"}]);
+        edges = new vis.DataSet([{"arrows": "to", "from": "homepage", "title": "homepage \u2192 Salad Studio: 6 users", "to": "Salad Studio", "value": 6}, {"arrows": "to", "from": "homepage", "title": "homepage \u2192 Sweet Treats: 4 users", "to": "Sweet Treats", "value": 4}, {"arrows": "to", "from": "homepage", "title": "homepage \u2192 Noodle Nook: 4 users", "to": "Noodle Nook", "value": 4}, {"arrows": "to", "from": "homepage", "title": "homepage \u2192 Taco Town: 7 users", "to": "Taco Town", "value": 7}, {"arrows": "to", "from": "homepage", "title": "homepage \u2192 BBQ Bliss: 10 users", "to": "BBQ Bliss", "value": 10}, {"arrows": "to", "from": "homepage", "title": "homepage \u2192 Burger Barn: 10 users", "to": "Burger Barn", "value": 10}, {"arrows": "to", "from": "homepage", "title": "homepage \u2192 Vegan Vibes: 4 users", "to": "Vegan Vibes", "value": 4}, {"arrows": "to", "from": "homepage", "title": "homepage \u2192 Pizza Palace: 4 users", "to": "Pizza Palace", "value": 4}, {"arrows": "to", "from": "homepage", "title": "homepage \u2192 Sushi World: 1 users", "to": "Sushi World", "value": 1}, {"arrows": "to", "from": "Salad Studio", "title": "Salad Studio \u2192 Protein Bowl: 2 users", "to": "Protein Bowl", "value": 2}, {"arrows": "to", "from": "Salad Studio", "title": "Salad Studio \u2192 Caesar Salad: 7 users", "to": "Caesar Salad", "value": 7}, {"arrows": "to", "from": "Salad Studio", "title": "Salad Studio \u2192 Greek Salad: 2 users", "to": "Greek Salad", "value": 2}, {"arrows": "to", "from": "Protein Bowl", "title": "Protein Bowl \u2192 cart: 5 users", "to": "cart", "value": 5}, {"arrows": "to", "from": "cart", "title": "cart \u2192 checkout: 19 users", "to": "checkout", "value": 19}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Ice Cream: 2 users", "to": "Ice Cream", "value": 2}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Donut: 2 users", "to": "Donut", "value": 2}, {"arrows": "to", "from": "cart", "title": "cart \u2192 cart: 28 users", "to": "cart", "value": 28}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Fried Rice: 3 users", "to": "Fried Rice", "value": 3}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Chicken Chow Mein: 1 users", "to": "Chicken Chow Mein", "value": 1}, {"arrows": "to", "from": "cart", "title": "cart \u2192 BBQ Bliss: 4 users", "to": "BBQ Bliss", "value": 4}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Beef Taco: 4 users", "to": "Beef Taco", "value": 4}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Salad Studio: 5 users", "to": "Salad Studio", "value": 5}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Greek Salad: 2 users", "to": "Greek Salad", "value": 2}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Pulled Pork Sandwich: 4 users", "to": "Pulled Pork Sandwich", "value": 4}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Veggie Taco: 2 users", "to": "Veggie Taco", "value": 2}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Sushi World: 3 users", "to": "Sushi World", "value": 3}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Taco Town: 5 users", "to": "Taco Town", "value": 5}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Noodle Nook: 1 users", "to": "Noodle Nook", "value": 1}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Bacon Burger: 3 users", "to": "Bacon Burger", "value": 3}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Smoothie: 3 users", "to": "Smoothie", "value": 3}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Cornbread: 1 users", "to": "Cornbread", "value": 1}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Vegan Burger: 1 users", "to": "Vegan Burger", "value": 1}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Garlic Bread: 3 users", "to": "Garlic Bread", "value": 3}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Protein Bowl: 1 users", "to": "Protein Bowl", "value": 1}, {"arrows": "to", "from": "cart", "title": "cart \u2192 BBQ Ribs: 2 users", "to": "BBQ Ribs", "value": 2}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Caesar Salad: 2 users", "to": "Caesar Salad", "value": 2}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Margherita Pizza: 2 users", "to": "Margherita Pizza", "value": 2}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Pepperoni Pizza: 2 users", "to": "Pepperoni Pizza", "value": 2}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Fries: 4 users", "to": "Fries", "value": 4}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Salmon Roll: 1 users", "to": "Salmon Roll", "value": 1}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Tuna Sashimi: 2 users", "to": "Tuna Sashimi", "value": 2}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Vegan Vibes: 1 users", "to": "Vegan Vibes", "value": 1}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Cheeseburger: 3 users", "to": "Cheeseburger", "value": 3}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Burger Barn: 1 users", "to": "Burger Barn", "value": 1}, {"arrows": "to", "from": "cart", "title": "cart \u2192 Spring Roll: 1 users", "to": "Spring Roll", "value": 1}, {"arrows": "to", "from": "Sweet Treats", "title": "Sweet Treats \u2192 Ice Cream: 2 users", "to": "Ice Cream", "value": 2}, {"arrows": "to", "from": "Sweet Treats", "title": "Sweet Treats \u2192 Donut: 3 users", "to": "Donut", "value": 3}, {"arrows": "to", "from": "Ice Cream", "title": "Ice Cream \u2192 cart: 4 users", "to": "cart", "value": 4}, {"arrows": "to", "from": "Donut", "title": "Donut \u2192 cart: 2 users", "to": "cart", "value": 2}, {"arrows": "to", "from": "Donut", "title": "Donut \u2192 Chocolate Cake: 2 users", "to": "Chocolate Cake", "value": 2}, {"arrows": "to", "from": "Donut", "title": "Donut \u2192 Noodle Nook: 1 users", "to": "Noodle Nook", "value": 1}, {"arrows": "to", "from": "Noodle Nook", "title": "Noodle Nook \u2192 Fried Rice: 2 users", "to": "Fried Rice", "value": 2}, {"arrows": "to", "from": "Noodle Nook", "title": "Noodle Nook \u2192 Spring Roll: 2 users", "to": "Spring Roll", "value": 2}, {"arrows": "to", "from": "Noodle Nook", "title": "Noodle Nook \u2192 Chicken Chow Mein: 3 users", "to": "Chicken Chow Mein", "value": 3}, {"arrows": "to", "from": "Fried Rice", "title": "Fried Rice \u2192 cart: 5 users", "to": "cart", "value": 5}, {"arrows": "to", "from": "Fried Rice", "title": "Fried Rice \u2192 Fried Rice: 1 users", "to": "Fried Rice", "value": 1}, {"arrows": "to", "from": "Chicken Chow Mein", "title": "Chicken Chow Mein \u2192 cart: 3 users", "to": "cart", "value": 3}, {"arrows": "to", "from": "Chicken Chow Mein", "title": "Chicken Chow Mein \u2192 checkout: 1 users", "to": "checkout", "value": 1}, {"arrows": "to", "from": "BBQ Bliss", "title": "BBQ Bliss \u2192 Cornbread: 4 users", "to": "Cornbread", "value": 4}, {"arrows": "to", "from": "BBQ Bliss", "title": "BBQ Bliss \u2192 BBQ Ribs: 5 users", "to": "BBQ Ribs", "value": 5}, {"arrows": "to", "from": "BBQ Bliss", "title": "BBQ Bliss \u2192 Pulled Pork Sandwich: 5 users", "to": "Pulled Pork Sandwich", "value": 5}, {"arrows": "to", "from": "Cornbread", "title": "Cornbread \u2192 cart: 3 users", "to": "cart", "value": 3}, {"arrows": "to", "from": "Cornbread", "title": "Cornbread \u2192 BBQ Ribs: 1 users", "to": "BBQ Ribs", "value": 1}, {"arrows": "to", "from": "Cornbread", "title": "Cornbread \u2192 Pulled Pork Sandwich: 1 users", "to": "Pulled Pork Sandwich", "value": 1}, {"arrows": "to", "from": "Taco Town", "title": "Taco Town \u2192 Veggie Taco: 5 users", "to": "Veggie Taco", "value": 5}, {"arrows": "to", "from": "Taco Town", "title": "Taco Town \u2192 Beef Taco: 4 users", "to": "Beef Taco", "value": 4}, {"arrows": "to", "from": "Taco Town", "title": "Taco Town \u2192 Nachos: 4 users", "to": "Nachos", "value": 4}, {"arrows": "to", "from": "Veggie Taco", "title": "Veggie Taco \u2192 Beef Taco: 2 users", "to": "Beef Taco", "value": 2}, {"arrows": "to", "from": "Veggie Taco", "title": "Veggie Taco \u2192 cart: 5 users", "to": "cart", "value": 5}, {"arrows": "to", "from": "Veggie Taco", "title": "Veggie Taco \u2192 Veggie Taco: 2 users", "to": "Veggie Taco", "value": 2}, {"arrows": "to", "from": "Beef Taco", "title": "Beef Taco \u2192 cart: 10 users", "to": "cart", "value": 10}, {"arrows": "to", "from": "Beef Taco", "title": "Beef Taco \u2192 Pizza Palace: 1 users", "to": "Pizza Palace", "value": 1}, {"arrows": "to", "from": "Caesar Salad", "title": "Caesar Salad \u2192 cart: 7 users", "to": "cart", "value": 7}, {"arrows": "to", "from": "Caesar Salad", "title": "Caesar Salad \u2192 Caesar Salad: 1 users", "to": "Caesar Salad", "value": 1}, {"arrows": "to", "from": "Caesar Salad", "title": "Caesar Salad \u2192 Protein Bowl: 2 users", "to": "Protein Bowl", "value": 2}, {"arrows": "to", "from": "Caesar Salad", "title": "Caesar Salad \u2192 checkout: 1 users", "to": "checkout", "value": 1}, {"arrows": "to", "from": "Greek Salad", "title": "Greek Salad \u2192 Caesar Salad: 1 users", "to": "Caesar Salad", "value": 1}, {"arrows": "to", "from": "Greek Salad", "title": "Greek Salad \u2192 checkout: 1 users", "to": "checkout", "value": 1}, {"arrows": "to", "from": "Greek Salad", "title": "Greek Salad \u2192 cart: 2 users", "to": "cart", "value": 2}, {"arrows": "to", "from": "BBQ Ribs", "title": "BBQ Ribs \u2192 BBQ Ribs: 1 users", "to": "BBQ Ribs", "value": 1}, {"arrows": "to", "from": "BBQ Ribs", "title": "BBQ Ribs \u2192 cart: 6 users", "to": "cart", "value": 6}, {"arrows": "to", "from": "BBQ Ribs", "title": "BBQ Ribs \u2192 Sushi World: 2 users", "to": "Sushi World", "value": 2}, {"arrows": "to", "from": "BBQ Ribs", "title": "BBQ Ribs \u2192 Noodle Nook: 1 users", "to": "Noodle Nook", "value": 1}, {"arrows": "to", "from": "Pulled Pork Sandwich", "title": "Pulled Pork Sandwich \u2192 Pizza Palace: 1 users", "to": "Pizza Palace", "value": 1}, {"arrows": "to", "from": "Pulled Pork Sandwich", "title": "Pulled Pork Sandwich \u2192 cart: 6 users", "to": "cart", "value": 6}, {"arrows": "to", "from": "Pulled Pork Sandwich", "title": "Pulled Pork Sandwich \u2192 BBQ Ribs: 1 users", "to": "BBQ Ribs", "value": 1}, {"arrows": "to", "from": "Pulled Pork Sandwich", "title": "Pulled Pork Sandwich \u2192 Taco Town: 1 users", "to": "Taco Town", "value": 1}, {"arrows": "to", "from": "Pizza Palace", "title": "Pizza Palace \u2192 Pepperoni Pizza: 3 users", "to": "Pepperoni Pizza", "value": 3}, {"arrows": "to", "from": "Pizza Palace", "title": "Pizza Palace \u2192 Garlic Bread: 2 users", "to": "Garlic Bread", "value": 2}, {"arrows": "to", "from": "Pizza Palace", "title": "Pizza Palace \u2192 Margherita Pizza: 1 users", "to": "Margherita Pizza", "value": 1}, {"arrows": "to", "from": "Pepperoni Pizza", "title": "Pepperoni Pizza \u2192 cart: 4 users", "to": "cart", "value": 4}, {"arrows": "to", "from": "Pepperoni Pizza", "title": "Pepperoni Pizza \u2192 Margherita Pizza: 1 users", "to": "Margherita Pizza", "value": 1}, {"arrows": "to", "from": "Burger Barn", "title": "Burger Barn \u2192 Fries: 5 users", "to": "Fries", "value": 5}, {"arrows": "to", "from": "Burger Barn", "title": "Burger Barn \u2192 Cheeseburger: 4 users", "to": "Cheeseburger", "value": 4}, {"arrows": "to", "from": "Burger Barn", "title": "Burger Barn \u2192 Bacon Burger: 2 users", "to": "Bacon Burger", "value": 2}, {"arrows": "to", "from": "Fries", "title": "Fries \u2192 cart: 9 users", "to": "cart", "value": 9}, {"arrows": "to", "from": "Fries", "title": "Fries \u2192 Sweet Treats: 1 users", "to": "Sweet Treats", "value": 1}, {"arrows": "to", "from": "Sushi World", "title": "Sushi World \u2192 Tuna Sashimi: 2 users", "to": "Tuna Sashimi", "value": 2}, {"arrows": "to", "from": "Sushi World", "title": "Sushi World \u2192 Salmon Roll: 3 users", "to": "Salmon Roll", "value": 3}, {"arrows": "to", "from": "Sushi World", "title": "Sushi World \u2192 Miso Soup: 2 users", "to": "Miso Soup", "value": 2}, {"arrows": "to", "from": "Tuna Sashimi", "title": "Tuna Sashimi \u2192 cart: 3 users", "to": "cart", "value": 3}, {"arrows": "to", "from": "Tuna Sashimi", "title": "Tuna Sashimi \u2192 Miso Soup: 1 users", "to": "Miso Soup", "value": 1}, {"arrows": "to", "from": "Vegan Vibes", "title": "Vegan Vibes \u2192 Vegan Burger: 2 users", "to": "Vegan Burger", "value": 2}, {"arrows": "to", "from": "Vegan Vibes", "title": "Vegan Vibes \u2192 Smoothie: 3 users", "to": "Smoothie", "value": 3}, {"arrows": "to", "from": "Vegan Vibes", "title": "Vegan Vibes \u2192 Quinoa Bowl: 1 users", "to": "Quinoa Bowl", "value": 1}, {"arrows": "to", "from": "Vegan Burger", "title": "Vegan Burger \u2192 Quinoa Bowl: 1 users", "to": "Quinoa Bowl", "value": 1}, {"arrows": "to", "from": "Vegan Burger", "title": "Vegan Burger \u2192 cart: 2 users", "to": "cart", "value": 2}, {"arrows": "to", "from": "Quinoa Bowl", "title": "Quinoa Bowl \u2192 cart: 1 users", "to": "cart", "value": 1}, {"arrows": "to", "from": "Quinoa Bowl", "title": "Quinoa Bowl \u2192 Smoothie: 1 users", "to": "Smoothie", "value": 1}, {"arrows": "to", "from": "Nachos", "title": "Nachos \u2192 Beef Taco: 1 users", "to": "Beef Taco", "value": 1}, {"arrows": "to", "from": "Nachos", "title": "Nachos \u2192 cart: 2 users", "to": "cart", "value": 2}, {"arrows": "to", "from": "Chocolate Cake", "title": "Chocolate Cake \u2192 cart: 1 users", "to": "cart", "value": 1}, {"arrows": "to", "from": "Salmon Roll", "title": "Salmon Roll \u2192 Salmon Roll: 1 users", "to": "Salmon Roll", "value": 1}, {"arrows": "to", "from": "Salmon Roll", "title": "Salmon Roll \u2192 cart: 4 users", "to": "cart", "value": 4}, {"arrows": "to", "from": "Spring Roll", "title": "Spring Roll \u2192 cart: 2 users", "to": "cart", "value": 2}, {"arrows": "to", "from": "Spring Roll", "title": "Spring Roll \u2192 Sushi World: 1 users", "to": "Sushi World", "value": 1}, {"arrows": "to", "from": "Bacon Burger", "title": "Bacon Burger \u2192 cart: 6 users", "to": "cart", "value": 6}, {"arrows": "to", "from": "Cheeseburger", "title": "Cheeseburger \u2192 Fries: 1 users", "to": "Fries", "value": 1}, {"arrows": "to", "from": "Cheeseburger", "title": "Cheeseburger \u2192 cart: 4 users", "to": "cart", "value": 4}, {"arrows": "to", "from": "Cheeseburger", "title": "Cheeseburger \u2192 Bacon Burger: 1 users", "to": "Bacon Burger", "value": 1}, {"arrows": "to", "from": "Cheeseburger", "title": "Cheeseburger \u2192 checkout: 1 users", "to": "checkout", "value": 1}, {"arrows": "to", "from": "Margherita Pizza", "title": "Margherita Pizza \u2192 Margherita Pizza: 1 users", "to": "Margherita Pizza", "value": 1}, {"arrows": "to", "from": "Margherita Pizza", "title": "Margherita Pizza \u2192 cart: 4 users", "to": "cart", "value": 4}, {"arrows": "to", "from": "Smoothie", "title": "Smoothie \u2192 cart: 6 users", "to": "cart", "value": 6}, {"arrows": "to", "from": "Smoothie", "title": "Smoothie \u2192 Vegan Vibes: 1 users", "to": "Vegan Vibes", "value": 1}, {"arrows": "to", "from": "Garlic Bread", "title": "Garlic Bread \u2192 Margherita Pizza: 1 users", "to": "Margherita Pizza", "value": 1}, {"arrows": "to", "from": "Garlic Bread", "title": "Garlic Bread \u2192 cart: 4 users", "to": "cart", "value": 4}, {"arrows": "to", "from": "Miso Soup", "title": "Miso Soup \u2192 Salmon Roll: 1 users", "to": "Salmon Roll", "value": 1}, {"arrows": "to", "from": "Miso Soup", "title": "Miso Soup \u2192 cart: 2 users", "to": "cart", "value": 2}, {"arrows": "to", "from": "Miso Soup", "title": "Miso Soup \u2192 Miso Soup: 1 users", "to": "Miso Soup", "value": 1}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+        // if this network requires displaying the configure window,
+        // put it in its div
+        options.configure["container"] = document.getElementById("config");
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
