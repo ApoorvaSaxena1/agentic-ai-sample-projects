@@ -1,4 +1,5 @@
 🧠 Agentic AI Sample Projects
+
 Welcome to Agentic AI Sample Projects — a growing collection of exploratory projects that demonstrate how AI agents can be applied to solve practical problems, generate insights, and assist in decision-making.
 
 I’m passionate about experimenting with agentic AI patterns and sharing sample projects that showcase how AI tools, automation, and analytics can come together to build intelligent systems.
