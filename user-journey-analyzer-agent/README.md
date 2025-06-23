@@ -69,7 +69,7 @@ Here’s an example of the AI recommendations produced:
 ### Popular Menu items Heat map
 ![Popular menu items Heat map](images/flow_heatmap.png)
 
-### Popular Menu items Heat map
+### User Journey Sankey Map
 ![User journey Sankey map](image-1.png)
 
 ### User Journey Sunburst map
